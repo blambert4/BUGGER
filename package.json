@@ -14,8 +14,8 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot --open --port $PORT",
-    "build": "npm i -dev && webpack --mode production",
+    "start": "node index.js",
+    "build": "webpack",
     "heroku-postbuild": "npm build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd client1 && npm run start",
