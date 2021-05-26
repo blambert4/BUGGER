@@ -16,22 +16,8 @@ database.connect();
 
 const port = 4000;
 
-// --> Add this
-// ** MIDDLEWARE ** //
-const whitelist = ['http://localhost:3000', 'http://localhost:4000', 'https://lyel.herokuapp.com']
-const corsOptions = {
-  origin: function (origin, callback) {
-    console.log("** Origin of request " + origin)
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      console.log("Origin acceptable")
-      callback(null, true)
-    } else {
-      console.log("Origin rejected")
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
 
+app.use(express.static('client/build'));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(cors());
