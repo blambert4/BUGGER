@@ -3,6 +3,7 @@ const {Client} = require('pg')
 const cors = require("cors");
 const app = express();
 const bodyParser = require('body-parser')
+const routes = require('./routes');
 const DATABASE_URL = "postgres://tbzaxrhbgddeng:29ac467aa5b8dc260e7c6c5865ac0b1a9eee9ca28c6f248d442549aa8929a60f@ec2-54-162-119-125.compute-1.amazonaws.com:5432/dabq5ojjlgkmf9"
 
 const database = new Client({
@@ -16,7 +17,7 @@ database.connect();
 
 const port = 4000;
 
-
+app.use(routes)
 app.use(express.static('client/build'));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
