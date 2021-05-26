@@ -1,0 +1,22 @@
+#box{
+    display: inline-flex;
+    position: absolute;
+    border: solid black 1px;
+    top: 20%;
+    height: 70vh;
+}
+.left{
+    width: 33%;
+    
+}
+.mid{
+    
+    width: 34%;
+    top: 20%;
+    left: 33%;
+}
+.right{
+    width: 33%;
+    top: 20%;
+    left: 67%;
+}

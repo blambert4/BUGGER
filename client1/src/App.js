@@ -32,7 +32,8 @@ function App() {
 
   const [bugs, setBugs] = useState([]);
   const getBugs = () =>{
-        axios.get("http://localhost:4000/all").then((response)=>{setBugs(response.data.rows)})
+        axios.get("http://localhost:4000/all").then((response)=>{
+          setBugs(response.data.rows)})
     }
   
   const home = () =>{
@@ -59,7 +60,7 @@ function App() {
     <Home />
     <Submit />
     <div className = "k" id = "buggies">
-        {bugs.map((bug)=>{
+        {bugs.map((bug)=>{ 
           return(
             <div key = {bug.id} className = "row" >
               <small> {bug.id }</small>

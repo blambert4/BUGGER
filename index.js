@@ -1,20 +1,19 @@
 const express = require('express')
-const Database = require('pg').Pool;
+const {Client} = require('pg')
 const cors = require("cors");
 const app = express();
 const bodyParser = require('body-parser')
+const DATABASE_URL = "postgres://tbzaxrhbgddeng:29ac467aa5b8dc260e7c6c5865ac0b1a9eee9ca28c6f248d442549aa8929a60f@ec2-54-162-119-125.compute-1.amazonaws.com:5432/dabq5ojjlgkmf9"
 
+const database = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
-
-const database = new Database({
-    port: 5432,
-    host: 'localhost',
-    user: 'postgres',
-    password: 'Psalm103!',
-    database: 'postgres',
-    
-})
 database.connect();
+
 const port = 4000;
 
 // --> Add this
