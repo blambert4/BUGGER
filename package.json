@@ -15,7 +15,7 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "concurrently \"nodemon index.html\" \"npm run dev\"",
+    "start": "concurrently \"nodemon index.js\" \"npm run dev\"",
     "build": "webpack",
     "heroku-postbuild": "npm build",
     "test": "echo \"Error: no test specified\" && exit 1",
