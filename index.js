@@ -18,7 +18,7 @@ const port = 4000;
 
 // --> Add this
 // ** MIDDLEWARE ** //
-const whitelist = ['http://localhost:3000', 'http://localhost:4000', 'https://server1.herokuapp.com']
+const whitelist = ['http://localhost:3000', 'http://localhost:4000', 'https://lyel.herokuapp.com']
 const corsOptions = {
   origin: function (origin, callback) {
     console.log("** Origin of request " + origin)
