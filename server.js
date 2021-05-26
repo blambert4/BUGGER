@@ -16,7 +16,7 @@ const DATABASE_URL = "postgres://tbzaxrhbgddeng:29ac467aa5b8dc260e7c6c5865ac0b1a
 
 database.connect();*/
 
-const port = 5000;
+const port = process.env.PORT || 4000;
 
 
 app.use(express.static(path.join(__dirname, 'client1/build')));
@@ -65,4 +65,4 @@ app.put("/edit/:id", (req,res)=>{
     })
 })*/
 
-app.listen(port, ()=>{console.log(`running on port ${port}`)})
+app.listen(port, '0.0.0.0', ()=>{console.log(`running on port ${port}`)})
