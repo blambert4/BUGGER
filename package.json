@@ -17,8 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "dev": "cd client1 && npm run start",
-    "go": "concurrently \"npm run start\" \"npm run dev\"",
-    "web": "npm run wstart"
+    "go": "concurrently \"npm run start\" \"npm run dev\""
   },
   "author": "",
   "license": "ISC"

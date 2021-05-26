@@ -1,0 +1,2 @@
+web: npm run wstart
+postdeploy: npm run heroku-dev && npm run wbuild
