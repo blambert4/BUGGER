@@ -26,7 +26,7 @@ app.use(cors());
 app.use(routes)
 
 app.get("/*", (req,res)=>{
-    res.sendFile(path.join(__dirname, 'client1/public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client1/build', 'index.html'));
 })
 /*app.post("/insert", (req,res)=>{
     const type = req.body.type;
