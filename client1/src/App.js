@@ -32,7 +32,7 @@ function App() {
 
   const [bugs, setBugs] = useState([]);
   const getBugs = () =>{
-        axios.get("http://localhost:4000/all").then((response)=>{
+        axios.get("http://localhost:4000/find").then((response)=>{
           setBugs(response.data.rows)})
     }
   
