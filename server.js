@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'folder')));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(cors());
-//app.use(routes)
+app.use(routes)
 
 /*app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, 'folder', 'index.html'));
