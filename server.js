@@ -25,10 +25,10 @@ app.use(bodyParser.json());
 app.use(cors());
 //app.use(routes)
 
-app.get("/", (req,res)=>{
+/*app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname, 'folder', 'index.html'));
 
-})
+})*/
 app.post("/insert", (req,res)=>{
     const type = req.body.type;
     const assignee = req.body.assignee;
