@@ -1,3 +1,15 @@
 #ok{
     display: none;
 }
+.cardz{
+    /* the important one */
+    transform-style: preserve-3d;
+    max-height: 60vh;
+    width: 75rem;
+    background-color:white;
+    /* also an important one */
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    margin: 15px;
+}
