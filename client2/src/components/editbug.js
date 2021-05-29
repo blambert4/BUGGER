@@ -15,7 +15,7 @@ function Editor(props){
     const [newComments, setNewComments] = useState("");      
 
     const edited = (id)=>{
-      axios.put(`http://localhost:4000/edit/${id}`, {type: newType, assignee: newAssignee, importance: newImportance, comments: newComments})
+      axios.put(`https://lyel.herokuapp.com/edit/${id}`, {type: newType, assignee: newAssignee, importance: newImportance, comments: newComments})
     } 
 
     return(
@@ -71,7 +71,7 @@ function Editor(props){
           <FormControl as="textarea" aria-label="With textarea" onChange = {(e)=>{setNewComments(e.target.value)}}/>
         </InputGroup>
             <button onClick = {()=>{edited(props.id)}}> edit</button>
-            <button onClick = {()=>{document.getElementById("edit").style.display = "none"}}> close </button>
+            <button onClick = {()=>{document.getElementById("edit").style.display = "none"; props.click()}}> close </button>
         </>
     )
 }

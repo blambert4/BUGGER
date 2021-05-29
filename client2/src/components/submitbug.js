@@ -19,7 +19,7 @@ function Submit(){
     }
 
     const submit = () =>{
-      axios.post("http://localhost:4000/insert", {type: bugType, assignee: assignee, importance: importance, comments: comments})
+      axios.post("https://lyel.herokuapp.com/insert", {type: bugType, assignee: assignee, importance: importance, comments: comments})
     }
 
     return(

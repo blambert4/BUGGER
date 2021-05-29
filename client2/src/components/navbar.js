@@ -18,9 +18,6 @@ function NavigationBar(props){
             <NavDropdown title="Bugs" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1" onClick = {()=>{props.click()}}>submit a bug</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" onClick = {()=>{props.clicker(); props.clickilicki()}}>bug list</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">find a bug</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>

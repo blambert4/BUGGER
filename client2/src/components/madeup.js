@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 function Madeup(){
     return(
         <div className = "k" id = "madeup">
-            <h1> This shit aint even fixed my boi</h1>
-            <p> nothing to see here! head over to the navbar to get to work!</p>
+            <h1> How does Bugger work?</h1>
+            <p> The backend was created in Express, a NodeJs framework. It is used as an API for a Heroku PostgreSQL database and Router for our frontend. If you couldn't tell, the frontend was created in React</p>
         </div>
     )
 }
