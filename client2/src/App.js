@@ -36,7 +36,7 @@ function App() {
 
   const [bugs, setBugs] = useState([]);
   const getBugs = () =>{
-        axios.get("http://localhost:4000/find").then((response)=>{setBugs(response.data.rows)})
+        axios.get("https://lyel.herokuapp.com/find").then((response)=>{setBugs(response.data.rows)})
     }
   
   const home = () =>{
