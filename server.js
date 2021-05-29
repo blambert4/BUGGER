@@ -19,13 +19,15 @@ database.connect();
 const port = process.env.PORT || 4000;
 
 
-//app.use(express.static(path.join(__dirname, 'folder')));
+app.use(express.static(path.join(__dirname, 'folder')));
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(cors());
 app.use(routes)
 
-
+app.get("/", (req,res)=>{
+  res.render("index")
+})
 
 
 app.listen(port, '0.0.0.0', ()=>{console.log(`running on port ${port}`)})
