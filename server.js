@@ -26,7 +26,7 @@ app.use(cors());
 app.use(routes)
 
 app.get("/", (req,res)=>{
-  res.render("index")
+  res.render("jetpack")
 })
 
 

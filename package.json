@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "devStart": "node server.js",
+    "devStart": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cd client1 && npm run start",
     "go": "concurrently \"npm run start\" \"npm run dev\""
