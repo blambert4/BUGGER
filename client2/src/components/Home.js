@@ -6,20 +6,20 @@ function Home(props){
     const move = (e) =>{
         const card = document.querySelector('.card');
         console.log("work")
-        let Xaxis = (window.innerWidth / 2 - e.pageX)/20;
-        let Yaxis = (window.innerHeight / 2 - e.pageY)/20;
+        let Xaxis = (window.innerWidth / 2 - e.pageX)/15;
+        let Yaxis = (window.innerHeight / 2 - e.pageY)/15;
         card.style.transform = `rotateX(${Yaxis}deg) rotateY(${Xaxis}deg)`;
     }
     const move2 = (e) =>{
         const card = document.querySelector('.card2');
-        let Xaxis = (window.innerWidth / 2 - e.pageX)/20;
-        let Yaxis = (window.innerHeight / 2 - e.pageY)/20;
+        let Xaxis = (window.innerWidth / 2 - e.pageX)/15;
+        let Yaxis = (window.innerHeight / 2 - e.pageY)/15;
         card.style.transform = `rotateX(${Yaxis}deg) rotateY(${Xaxis}deg)`;
     }
     const move3 = (e) =>{
         const card = document.querySelector('.card3');
-        let Xaxis = (window.innerWidth / 2 - e.pageX)/20;
-        let Yaxis = (window.innerHeight / 2 - e.pageY)/20;
+        let Xaxis = (window.innerWidth / 2 - e.pageX)/15;
+        let Yaxis = (window.innerHeight / 2 - e.pageY)/15;
         card.style.transform = `rotateX(${Yaxis}deg) rotateY(${Xaxis}deg)`;
     }
 

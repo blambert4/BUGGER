@@ -4,7 +4,7 @@
 .cardz{
     /* the important one */
     transform-style: preserve-3d;
-    height: 60vh;
+    height: 80vh;
     width: 75rem;
     background-color:white;
     /* also an important one */
@@ -15,4 +15,23 @@
     background-color: white;
     position: absolute;
     left: 13%;
+    background-image: url('https://media.giphy.com/media/rndVYAbcMGxva/giphy.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.cardz2{
+    /* the important one */
+    transform-style: preserve-3d;
+    height: 80vh;
+    width: 75rem;
+    /* also an important one */
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    margin: 15px;
+    background-color: white;
+    position: absolute;
+    left: 13%;
+    text-align: center;
 }

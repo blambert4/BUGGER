@@ -1,11 +1,17 @@
-import Carousel from "react-bootstrap/Carousel"
 import React from 'react';
+import "../css/submitbug.css";
 import ReactDOM from 'react-dom';
 function Madeup(){
     return(
         <div className = "k" id = "madeup">
-            <h1> How does Bugger work?</h1>
-            <p> The backend was created in Express, a NodeJs framework. It is used as an API for a Heroku PostgreSQL database and Router for our frontend. If you couldn't tell, the frontend was created in React</p>
+            <div className = "cardz2">
+                <h1> How does Bugger work?</h1>
+                <img src = "https://media.giphy.com/media/gG6OcTSRWaSis/giphy.gif"/>
+                <h2> Bugger is an app that is used to track bugs in development. It is simple and easy to use. Just define the type of bug it is, how important it is, who should be assigned to it, and some information about it and you are set. </h2>
+            
+            </div>
+            
+            
         </div>
     )
 }

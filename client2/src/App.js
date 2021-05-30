@@ -69,10 +69,16 @@ function App() {
   <div id = "main">
     <NavigationBar click = {handler} clicker = {mandler} clickang = 
     {home} clickio = {madeup} clickilicki = {getBugs} />
-    <Madeup />
+
+    <Madeup click = {handler} clicker = {mandler} clickang = 
+    {home} clickio = {madeup} clickilicki = {getBugs}/>
+
     <Home click = {handler} clicker = {mandler} clickang = 
     {home} clickio = {madeup} clickilicki = {getBugs} />
-    <Submit />
+
+    <Submit click = {handler} clicker = {mandler} clickang = 
+    {home} clickio = {madeup} clickilicki = {getBugs}/>
+    
     <div className = "k" id = "buggies">
         {bugs.map((bug)=>{
           return(
