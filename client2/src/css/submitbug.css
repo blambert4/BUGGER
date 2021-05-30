@@ -4,7 +4,7 @@
 .cardz{
     /* the important one */
     transform-style: preserve-3d;
-    max-height: 60vh;
+    height: 60vh;
     width: 75rem;
     background-color:white;
     /* also an important one */
@@ -12,4 +12,7 @@
     border-radius: 30px;
     padding: 0rem 5rem;
     margin: 15px;
+    background-color: white;
+    position: absolute;
+    left: 13%;
 }

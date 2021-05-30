@@ -70,7 +70,8 @@ function App() {
     <NavigationBar click = {handler} clicker = {mandler} clickang = 
     {home} clickio = {madeup} clickilicki = {getBugs} />
     <Madeup />
-    <Home />
+    <Home click = {handler} clicker = {mandler} clickang = 
+    {home} clickio = {madeup} clickilicki = {getBugs} />
     <Submit />
     <div className = "k" id = "buggies">
         {bugs.map((bug)=>{

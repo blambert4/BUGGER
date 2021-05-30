@@ -17,7 +17,7 @@ function Submit(){
     const [comments, setComments] = useState("");
 
     const success = ()=>{
-      document.getElementsByTagName("h3")[0].innerHTML = "Success!"
+      document.getElementById('success').visibility = 'visible'
     }
 
     const submit = () =>{
@@ -26,10 +26,8 @@ function Submit(){
 
     return(
         <>
-
-
         <div id = "ok" className = "k">
-          <Carousel variant = "dark" className = "cardz" style = {{position: 'absolute', left: '13%'}}>
+          <Carousel className = "cardz">
             <Carousel.Item>
             <img
                 style = {{position: 'relative', height: '60vh'}}
@@ -37,11 +35,11 @@ function Submit(){
                 alt="First slide"
             />
               <Carousel.Caption>
-                <h5 style = {{color: "black"}}>Bug Type</h5>
+                <h5 style = {{color: 'black'}}>Bug Type</h5>
                 <InputGroup className="mb-3">
                             <DropdownButton
+                              variant = 'info'
                               as={InputGroup.Prepend}
-                              variant="outline-secondary"
                               title="Bug Type"
                               id="input-group-dropdown-1"
                             >
@@ -53,6 +51,7 @@ function Submit(){
                         </InputGroup>
               </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item>
             <img
                 style = {{height: "60vh"}}
@@ -60,10 +59,24 @@ function Submit(){
                 alt="Second slide"
             />
               <Carousel.Caption>
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5 style = {{color: 'black'}}>Importance</h5>
+                <InputGroup className="mb-3">
+                  <DropdownButton
+                    as={InputGroup.Prepend}
+                    variant="info"
+                    title="Importance"
+                    id="input-group-dropdown-1"
+                  >
+                    <Dropdown.Item href="#" onClick = {()=>{setImportance("Critical")}}>Critical</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setImportance("High")}}>High</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setImportance("Medium")}}>Medium</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setImportance("Low")}}>Low</Dropdown.Item> 
+                  </DropdownButton>
+                  <FormControl aria-describedby="basic-addon1" value = {importance}/>
+                </InputGroup>
               </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item>
             <img
                 style = {{height: "60vh"}}
@@ -71,39 +84,43 @@ function Submit(){
                 alt="Third slide"
             />
               <Carousel.Caption>
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h5 style = {{color: 'black'}}>Assign to Whom</h5>
+                <InputGroup className="mb-3">
+                  <DropdownButton
+                    as={InputGroup.Prepend}
+                    variant="info"
+                    title="Assignee"
+                    id="input-group-dropdown-1"
+                  >
+                    <Dropdown.Item href="#" onClick = {()=>{setAssignee("Bradley")}}>Bradley Lambert</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setAssignee("Kahjha")}}>Kahjha Jappa</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setAssignee("Brian")}}>Brian McKnight</Dropdown.Item>
+                    <Dropdown.Item href="#" onClick = {()=>{setAssignee("Unassigned")}}>Unassigned</Dropdown.Item>
+                  </DropdownButton>
+                  <FormControl aria-describedby="basic-addon1" value = {assignee}/>
+                </InputGroup>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+            <img
+                style = {{position: 'relative', height: '60vh'}}
+                src="https://www.paifoundation.org/wp-content/uploads/2015/10/Blank-White-square-thumbnail.jpg"
+                alt="First slide"
+            />
+              <Carousel.Caption>
+                <h5 style = {{color: 'black'}}>Comments</h5>
+                <InputGroup>
+                  <FormControl as="textarea" aria-label="With textarea" onChange = {(e)=>{setComments(e.target.value)}}/>
+                </InputGroup>
+                <p style = {{color: 'black'}}> Does this look correct?<Button variant="success" onClick = {()=>{submit(); success()}}>Submit</Button></p>
+                <p id  = 'success' style = {{color: 'green', visibility: 'hidden'}}> Success!</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         {/*
-        <InputGroup className="mb-3">
-                  <DropdownButton
-                    as={InputGroup.Prepend}
-                    variant="outline-secondary"
-                    title="Bug Type"
-                    id="input-group-dropdown-1"
-                  >
-                    <Dropdown.Item id = "one" href="#" onClick = {()=>{setBugType("Compilation")}}>Compilation</Dropdown.Item>
-                    <Dropdown.Item id = "two" href="#" onClick = {()=>{setBugType("Run Time")}}>Run Time</Dropdown.Item>
-                    <Dropdown.Item id = "three" href="#" onClick = {()=>{setBugType("Other")}}>Other (Explain)</Dropdown.Item>
-                  </DropdownButton>
-                  <FormControl aria-describedby="basic-addon1" value = {bugType} id = "ij" />
-              </InputGroup>
-        <InputGroup className="mb-3">
-          <DropdownButton
-            as={InputGroup.Prepend}
-            variant="outline-secondary"
-            title="Assignee"
-            id="input-group-dropdown-1"
-          >
-            <Dropdown.Item href="#" onClick = {()=>{setAssignee("Bradley")}}>Bradley Lambert</Dropdown.Item>
-            <Dropdown.Item href="#" onClick = {()=>{setAssignee("Kahjha")}}>Kahjha Jappa</Dropdown.Item>
-            <Dropdown.Item href="#" onClick = {()=>{setAssignee("Brian")}}>Brian McKnight</Dropdown.Item>
-            <Dropdown.Item href="#" onClick = {()=>{setAssignee("Unassigned")}}>Unassigned</Dropdown.Item>
-          </DropdownButton>
-          <FormControl aria-describedby="basic-addon1" value = {assignee}/>
-        </InputGroup>
+        
+        
 
         <InputGroup className="mb-3">
           <DropdownButton
