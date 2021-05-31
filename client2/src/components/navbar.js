@@ -10,7 +10,6 @@ function NavigationBar(props){
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="#home" onClick = {()=>{props.clickang()}}>Bugger</Navbar.Brand>
-        <img style = {{width: "50px"}}src = {logo} />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">

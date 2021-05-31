@@ -84,7 +84,7 @@ function App() {
           return(
             <>
             <div key = {bug.id} style = {{display: "inline-flex", }}>
-              <Card style={{ width: '30rem', height: '30rem'}}>
+              <Card style={{ width: '30rem', height: '30rem', backgroundImage: "url('https://media.giphy.com/media/idLYmyWQI07I8dje74/giphy.gif')"}}>
                 <Card.Body>
                   <Card.Title>{bug.type} Bug</Card.Title>
                   <Card.Text>
@@ -93,7 +93,8 @@ function App() {
                   <p>
                     {bug.importance} importance
                   </p>
-                  <div style = {{border: "solid", height: "12rem"}}>
+                  <hr/>
+                  <div style = {{height: "12rem"}}>
                     {bug.comments}
                   </div>
                   <p style = {{display: "none"}}>
@@ -101,14 +102,14 @@ function App() {
                   </p>
                   <div id = "deleteButton"> 
                     <Button variant = "warning" onClick = {()=>{document.getElementById("edit").style.display = "flex"}}> edit </Button> 
-                    <Button variant = "danger" onClick = {()=>{deleteId(bug.id); getBugs()}}> delete </Button>\
+                    <Button variant = "danger" onClick = {()=>{deleteId(bug.id); getBugs()}}> delete </Button>
                   </div>
                 </Card.Body>
               </Card>
           </div>
-          <Card id = "edit" className = "edit" className = "k">
-            <Editor id = {bug.id} click = {getBugs} />
-          </Card>
+          <div id = "edit" className = "edit" className = "k">
+              <Editor className = "k" id = {bug.id} click = {getBugs}/>
+          </div>
         </>
           )
         })}    

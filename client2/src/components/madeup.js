@@ -7,12 +7,15 @@ function Madeup(){
             <div className = "left">
                 <img style = {{width: '90%'}} src = "https://media.giphy.com/media/gIMwYKYsjE6EZB6zS2/giphy.gif" />
                 <img style = {{width: '90%'}}src = "https://media.giphy.com/media/IneAQSWFnyHn2/giphy.gif" />
-                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/YiUredNQ5OdxzAaXbV/giphy.gif"/>
+                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/3ohhwEkV8mGKt12EPC/giphy.gif"/>
+                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/kHfCau1G2wIXIe0vGh/giphy.gif" />
             </div>
+
             <div className = "right">
-                <img style = {{width: '90%'}} src = "https://media.giphy.com/media/gIMwYKYsjE6EZB6zS2/giphy.gif" />
-                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/IneAQSWFnyHn2/giphy.gif" />
-                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/YiUredNQ5OdxzAaXbV/giphy.gif"/>
+                <img style = {{width: '90%'}} src = "https://media.giphy.com/media/k6SmJDWCRopihmwnxw/giphy.gif" />
+                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/H3RqCzg7ZPmfXpD6b3/giphy.gif" />
+                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/fAJ7FMoyKuqkh3zI4e/giphy.gif"/>
+                <img style = {{width: '90%'}}src = "https://media.giphy.com/media/cjoWs5ojCcKh01DJCC/giphy.gif"/>
             </div>
             
             <div className = "about" id = "one">
