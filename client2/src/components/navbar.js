@@ -14,10 +14,10 @@ function NavigationBar(props){
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-            <Nav.Link href="#features" onClick = {()=>{props.clickio()}}>How is it Made</Nav.Link>
+            <Nav.Link href="#features" onClick = {()=>{props.clickio()}}>About</Nav.Link>
             <NavDropdown title="Bugs" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1" onClick = {()=>{props.click()}}>submit a bug</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" onClick = {()=>{props.clicker(); props.clickilicki()}}>bug list</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1" onClick = {()=>{props.click()}}>Submit</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2" onClick = {()=>{props.clicker(); props.clickilicki()}}>List</NavDropdown.Item>
             </NavDropdown>
             </Nav>
         </Navbar.Collapse>

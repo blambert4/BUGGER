@@ -35,3 +35,39 @@
     left: 13%;
     text-align: center;
 }
+.about{
+    width: 40vw;
+    height: 60vh;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    margin: auto;
+    position: absolute;
+}
+.about p{
+    text-align: left;
+}
+.about h3{
+    text-align: center;
+}
+#one{
+    top: 10%;
+    left: 30vw;
+}
+#two{
+    top: 80%;
+    left: 30vw;
+}
+#three{
+    top: 150%;
+    left: 30vw;
+}
+.left{
+    display: inline-block;
+    width: 22%;
+}
+.right{
+    display: inline-block;
+    width: 22%;
+    position: absolute;
+    right: 0
+}
