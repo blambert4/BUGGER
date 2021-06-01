@@ -30,9 +30,9 @@ function Madeup(){
                 </p>
             </div>
             <div className = "about" id = "three">
-                <h3> What is it</h3>
+                <h3> Additional information</h3>
                 <br />
-                <p> Bugger is a CRUD app that creates and tracks bugs for a team. This web app is for <span style = {{color: 'red', border: 'none'}}> demonstration </span>  purposes only. Currently there is no login system nor form validation for a team of developers to use properly, however those are coming very soon! </p>
+                <p> Here is a link to my <a target = "_blank" href = "https://github.com/blambert4/BUGGER"> github </a> where you can check out the code! </p>
             </div>
         </div>
     )
