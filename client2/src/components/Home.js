@@ -34,7 +34,7 @@ function Home(props){
                 </div>
                 <div class="info">
                     <h4 class="title">SUBMIT A BUG </h4>
-                    <p> click <a href ="#" onClick = {()=>{props.click()}}> here </a> to submit the bug you are having </p>
+                    <p> click <a style = {{color: 'red', cursor: 'pointer'}} onClick = {()=>{props.click()}}> here </a> to submit the bug you are having </p>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@ function Home(props){
                 </div>
                 <div class="info">
                     <h4 class="title"> VIEW BUGS </h4>
-                    <p> click <a href = "#" onClick = {()=>{props.clicker(); props.clickilicki()}}>here</a> to view all the current bugs</p>
+                    <p> click <a style = {{color: 'red', cursor: 'pointer'}} onClick = {()=>{props.clicker(); props.clickilicki()}}>here</a> to view all the current bugs</p>
                     
                 </div>
             </div>
@@ -55,7 +55,7 @@ function Home(props){
                 </div>
                 <div class="info">
                     <h4 class="title">HOW DOES IT WORK</h4>
-                    <p> click <a href = "#" onClick = {()=>{props.clickio()}}>here</a> to view understand how Bugger works</p>
+                    <p> click <a style = {{color: 'red', cursor: 'pointer'}} onClick = {()=>{props.clickio()}}>here</a> to view understand how Bugger works</p>
                 </div>
             </div>
         </div>
